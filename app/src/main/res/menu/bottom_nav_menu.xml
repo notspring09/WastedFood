@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/item_bottom_nav_menu_home"
+            android:icon="@drawable/home"
+            android:iconTint="@color/colorWhite"
+            android:title="Trang chủ"
+            />
+
+        <item
+            android:id="@+id/item_bottom_nav_menu_add"
+            android:icon="@drawable/ic_baseline_post_add_24"
+            android:iconTint="@color/colorWhite"
+            android:title="Đăng bài"
+            />
+
+        <item
+            android:id="@+id/item_bottom_nav_menu_notification"
+            android:title="Thông báo"
+            android:iconTint="@color/colorWhite"
+            android:icon="@drawable/button_notification"
+            />
+</menu>

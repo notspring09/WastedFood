@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_seller_home"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_seller_home"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/loginHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Đăng ký" />
+
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/loginCard"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="80dp"
+        android:layout_width="match_parent"
+        android:background="@color/whiteCardColor"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="29dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#2AE131"
+                android:text="Chúc mừng bạn đã đăng ký thành công!"
+                android:layout_marginTop="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:text="Bạn đang trong thời gian chờ xác thực"
+                android:layout_marginTop="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center_horizontal"
+                android:text="Chúng tôi sẽ gửi thông báo cho bạn qua địa chỉ email đã đăng ký"
+                android:layout_marginTop="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:text="Nếu có thắc mắc vui lòng liên hệ"
+                android:layout_marginTop="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:text="Email: wastedfood@gmail.com"
+                android:layout_marginTop="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:text="Hotline: 0321234999"
+                android:layout_marginTop="20dp">
+            </TextView>
+            <Button
+                style="@style/loginButton"
+                android:id="@+id/btnGoHome"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="Trở về trang chủ" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

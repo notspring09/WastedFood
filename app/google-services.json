@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "89673767638",
+    "firebase_url": "https://wasted-food-1602432760230.firebaseio.com",
+    "project_id": "wasted-food-1602432760230",
+    "storage_bucket": "wasted-food-1602432760230.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89673767638:android:ef38e428bd029664d2c777",
+        "android_client_info": {
+          "package_name": "com.example.wastedfoodteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89673767638-70mi0d78c6qt66tpc2v772lvjj6pk1vh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wastedfoodteam",
+            "certificate_hash": "1ae63d3b7d2ac261533f9c291bef6b562ab8216e"
+          }
+        },
+        {
+          "client_id": "89673767638-p25bjokjlrj2eo0lp05gefq1l4khi473.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wastedfoodteam",
+            "certificate_hash": "170b068788d92ecd22d50d84596013d28c306dce"
+          }
+        },
+        {
+          "client_id": "89673767638-nbsm87ju8mnf7a698p241sdndsluf83v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wastedfoodteam",
+            "certificate_hash": "ebbcae7d09b272ea014bb177f6211917fae489ac"
+          }
+        },
+        {
+          "client_id": "89673767638-bquhn8rob0la8r8rkbrgt6js85uq03cv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wastedfoodteam",
+            "certificate_hash": "153489de5518ca10bed401334e7b0625623bc9ba"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhBfKnr77GOrOyrgiU16qLrqbaGzqlFNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89673767638-adjcn6mgai4g7qe4kl4i83t6i7dg5rpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

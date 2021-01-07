@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="15dp"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/browser_actions_bg_grey"
+        app:layout_constraintVertical_bias="0.0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:orientation="vertical">
+            <ImageView
+                android:contentDescription="@string/product"
+                android:focusable="false"
+                android:clickable="false"
+                android:id="@+id/iv_list_seller_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                tools:srcCompat="@tools:sample/avatars" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:id="@+id/tv_list_seller_remainTotal"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/colorWhite">
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:focusable="false"
+                android:clickable="false"
+                android:id="@+id/tv_list_seller_name"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:id="@+id/tv_list_seller_product_sold"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="TextView" />
+                <TextView
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:id="@+id/tv_list_seller_product_orderWaiting"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Đang chờ:" />
+            </LinearLayout>
+            <TextView
+                android:focusable="false"
+                android:clickable="false"
+                android:id="@+id/tv_list_seller_product_time"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="TextView"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seller.home.SellerHomeActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_seller_home"
+        android:layout_weight="1"
+        >
+        <ImageButton
+            android:id="@+id/information_tab_seller"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/menu"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/item_background"
+            app:srcCompat="@drawable/ic_baseline_view_headline_24"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/content_main"
+        android:layout_weight="20"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_nav_seller"
+        android:theme="@style/AppThemeMaterial"
+        android:layout_gravity="bottom"
+        app:itemTextColor="@color/colorWhite"
+        android:background="@drawable/gradient_seller_home"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_height="60dp"
+        android:layout_weight="1">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</LinearLayout>
+

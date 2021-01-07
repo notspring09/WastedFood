@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentPartner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_seller_home"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                style="@style/loginCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/whiteCardColor"
+                android:elevation="5dp"
+                app:cardCornerRadius="29dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="50dp"
+                        android:contentDescription="AppAvatar"
+                        android:src="@drawable/logo2"
+                        app:civ_border_color="@color/colorWhite"
+                        app:civ_border_width="1dp" />
+
+                    <EditText
+                        android:id="@+id/etSdtPartnerFLP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="25dp"
+                        android:drawableStart="@drawable/user"
+                        android:hint="Tên đăng nhập"
+                        android:paddingEnd="50dp"
+                        android:inputType="text"
+                        android:textColorHint="#B6ADAD" />
+
+                    <EditText
+                        android:id="@+id/etPassPartnerFLP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableStart="@drawable/padlock"
+                        android:hint="Mật Khẩu"
+                        android:inputType="textPassword"
+                        android:paddingEnd="50dp"
+                        android:textColorHint="#B6ADAD" />
+
+                    <Button
+                        android:id="@+id/btnSignInPartnerFLP"
+                        style="@style/loginButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Đăng nhập" />
+
+                    <TextView
+                        android:id="@+id/tvForgotPassPartnerFLP"
+                        style="text-decoration: underline;"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="Quên mật khẩu?"
+                        android:textColor="@color/lightBlue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvRegisterSeller"
+                        style="text-decoration: underline;"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Đăng ký tài khoản"
+                        android:textColor="@color/lightBlue"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.225"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnBuyerOptionFLP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:text="MUA HÀNG"
+                android:textColor="@color/lightBlue" />
+
+
+            <Button
+                android:id="@+id/btnPartnerOptionFLP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_background"
+                android:text="BÁN HÀNG"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

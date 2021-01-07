@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="fill_vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNameSellerFSD"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#04BBD6"
+            android:gravity="center"
+            android:text="Name Seller"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivPhotoSellerFSD"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="Seller Avatar"
+            android:src="@drawable/no_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#009688" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="40dp">
+
+            <ImageButton
+                android:id="@+id/ibReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Report"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_angry_emoticon_square_face"
+                android:text="Báo cáo" />
+
+            <ImageButton
+                android:id="@+id/iBtnFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Follow"
+                android:src="@drawable/followed" />
+        </LinearLayout>
+
+
+        <TableLayout
+            android:id="@+id/linerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <TableRow android:layout_marginBottom="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Direct"
+                    android:src="@drawable/location" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAddressFSD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="250dp"
+                        android:text="KM29, Thạch thất hòa lạc"
+                        android:textAlignment="textStart"
+                        android:textColor="#0E9EEF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Distance"
+                    android:src="@drawable/ic_distance" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="250dp"
+                        android:text="4,1 KM"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </TableRow>
+
+
+            <TextView
+                android:id="@+id/tvDescriptionFSD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:maxWidth="300dp"
+                android:text="Một vài dòng mô tả của cửa hàng"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Thông tin cửa hàng"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp">
+
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Rating"
+                    android:src="@drawable/ic_star" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRatingFSD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Đánh giá: "
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Follow"
+                    android:src="@drawable/ic_favourite" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvFollowFSD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Số người theo dõi: "
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Product"
+                    android:src="@drawable/ic_product" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvProductFSD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Số sản phẩm đã bán: "
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/strike_through" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Các sản phẩm đang bán"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <com.example.wastedfoodteam.utils.service.NonScrollListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

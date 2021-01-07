@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:layout_height="200dp">
+        <ImageView
+            android:contentDescription="Product"
+            android:layout_width="match_parent"
+            android:id="@+id/iv_list_order_product_picture"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent">
+
+        </ImageView>
+        <Button
+            android:id="@+id/btn_editProduct_stop"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="NGỪNG BÁN"
+            android:textStyle="bold"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/colorRed"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_editProduct_edit"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@id/btn_editProduct_stop"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/colorBlue"
+            android:text="CHỈNH SỬA"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_seller_home"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_gravity="fill_vertical"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:paddingHorizontal="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            style="@style/AppTheme"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:text="Đang chờ lấy hàng"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_order_detail_seller_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:text="Hiện không có đơn nào cần xác nhận"
+            >
+        </TextView>
+        <com.example.wastedfoodteam.utils.service.NonScrollListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            style="@style/AppTheme"
+            android:textSize="32sp"
+            android:text="Đã lấy hàng"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_order_detail_seller_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/AppTheme"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:text="Hiện không có đơn nào cần xác nhận"
+            >
+        </TextView>
+        <com.example.wastedfoodteam.utils.service.NonScrollListView
+            android:id="@+id/lv_list_product_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            style="@style/AppTheme"
+            android:textSize="32sp"
+            android:text="Đã bị hủy"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_order_detail_seller_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/AppTheme"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:text="Hiện không có đơn nào"
+            >
+        </TextView>
+        <com.example.wastedfoodteam.utils.service.NonScrollListView
+            android:id="@+id/lv_list_product_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+
+
+</LinearLayout>

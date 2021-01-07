@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">WastedFoodTeam</string>
+    <string name="facebook_app_id">353221452657351</string>
+    <string name="fb_login_protocol_scheme">fb353221452657351</string>
+    <string name="google_direct_api">AIzaSyBbj34OoqGoIqbSUwqun4-jtjNIZIAu134</string>
+    <string name="order">Đặt hàng</string>
+
+    <string-array name="direction_array">
+        <item>Tất cả</item>
+        <item>5km</item>
+        <item>10km</item>
+        <item>15km</item>
+        <item>20km</item>
+    </string-array>
+
+    <string-array name="discount_array">
+        <item>10%</item>
+        <item>50%</item>
+        <item>90%</item>
+        <item>Tất cả</item>
+    </string-array>
+
+    //register
+    <string name="username_hint">Tên tài khoản <font fgcolor='#FF0000'>*</font></string>
+    <string name="login_password_hint">Mật khẩu <font fgcolor='#FF0000'>*</font></string>
+    <string name="login_confirm_password_hint">Nhập lại mật khẩu <font fgcolor='#FF0000'>*</font></string>
+    <string name="login_restaurant_hint">Tên nhà hàng <font fgcolor='#FF0000'>*</font></string>
+    <string name="login_email_hint">Địa chỉ email <font fgcolor='#FF0000'>*</font></string>
+    <string name="login_lng_hint">Kinh độ <font fgcolor='#FF0000'>*</font></string>
+    <string name="login_lat_hint">Vĩ độ <font fgcolor='#FF0000'>*</font></string>
+    <string name="login_address_hint">Địa chỉ <font fgcolor='#FF0000'>*</font></string>
+    <string name="login_mobile_number_hint">Số điện thoại <font fgcolor='#FF0000'>*</font></string>
+
+    //product
+    <string name="product_name">Tên sản phẩm <font fgcolor='#FF0000'>*</font></string>
+    <string name="product_description">Mô tả sản phẩm <font fgcolor='#FF0000'>*</font></string>
+    <string name="product_ori_price">Giá gốc <font fgcolor='#FF0000'>*</font></string>
+    <string name="product_sell_price">Giá bán <font fgcolor='#FF0000'>*</font></string>
+    <string name="product_quantity">Số lượng <font fgcolor='#FF0000'>*</font></string>
+    <string name="product_start_time">Bắt đầu <font fgcolor='#FF0000'>*</font></string>
+    <string name="product_end_time">Kết thúc <font fgcolor='#FF0000'>*</font></string>
+    <string name="product_remain">Số lượng còn lại <font fgcolor='#FF0000'>*</font></string>
+
+    <string name="login_name_hint">Tên người dùng</string>
+    <string name="default_web_client_id">89673767638-adjcn6mgai4g7qe4kl4i83t6i7dg5rpt.apps.googleusercontent.com</string>
+    <string name="product">Product</string>
+    <string name="avatar">Avatar</string>
+    <string name="buyer_avatar">BuyerAvatar</string>
+    <string name="seller_avatar">SellerAvatar</string>
+    <string name="menu">Menu</string>
+    <string name="note_information">Ghi chú: %1$s</string>
+    <string name="total_money">Thành tiền: %1$s</string>
+    <string name="total_quantity">Số lượng: %1$d</string>
+    <string name="stop_selling">NGỪNG BÁN</string>
+    <string name="wait_for_payment">CHỜ THANH TOÁN</string>
+    <string name="payed">ĐÃ THANH TOÁN</string>
+    <string name="canceled">ĐÃ HỦY</string>
+    <string name="empty_list_product">Không tìm thấy sản phẩm nào phù hợp</string>
+    <string name="empty_list_order">Bạn chưa đặt mua sản phẩm nào</string>
+    <string name="empty_list_seller_follow">Bạn chưa theo dõi người bán nào</string>
+    <string name="empty_list_notification">Bạn chưa có thông báo nào cả</string>
+    <string name="hint_search">Tìm kiếm</string>
+    <string name="sucess_upload">Cập nhật thành công</string>
+    <string name="error_upload">Lỗi cập nhật</string>
+</resources>

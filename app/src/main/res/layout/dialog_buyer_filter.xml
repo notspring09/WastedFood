@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TableRow android:layout_margin="10dp">
+
+        <TextView
+            android:text="Khoảng cách"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="24dp"
+            android:layout_marginStart="5dp"
+            android:text=":"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spDistance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end" />
+    </TableRow>
+
+    <TableRow android:layout_margin="10dp">
+
+        <TextView
+            android:text="Thời gian bán"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="24dp"
+            android:layout_marginStart="5dp"
+            android:text=":"
+            android:textSize="20sp" />
+
+        <LinearLayout android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giảm giá"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="24dp"
+            android:layout_marginStart="5dp"
+            android:text=":"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end" />
+    </TableRow>
+
+    <LinearLayout android:gravity="center">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            style="@style/redButtonAlternative"
+            android:text="Đặt lại"/>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            style="@style/redButton"
+            android:text="Áp dụng"/>
+    </LinearLayout>
+
+</TableLayout>

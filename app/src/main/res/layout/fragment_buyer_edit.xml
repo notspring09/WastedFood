@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <View
+        android:id="@+id/bg_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/ic_bg_topheader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg_top_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingBottom="20dp"
+            android:text="Thông tin cá nhân"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivBuyerAvatarFEB"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner_background"
+            android:contentDescription="Avatar"
+            app:srcCompat="@drawable/ic_camera" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:text="Tên người dùng:"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/etBuyerNameFEB"
+                    android:layout_weight="2"
+                    android:hint="Tên"
+                    android:maxLength="50"
+                    android:textColorHint="#B6ADAD" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Số điện thoại:"
+                    android:textSize="16sp"/>
+
+
+                <EditText
+                    android:id="@+id/etEditPhoneFEB"
+                    android:layout_weight="2"
+                    android:hint="Phone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColorHint="#B6ADAD" />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="Giới tính:"
+                    android:textSize="18sp" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbBoy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:text="Nam" />
+
+                    <RadioButton
+                        android:id="@+id/rbGirl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Nữ" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="Ngày sinh:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/etEditBuyerDateofBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/editTextColor"
+                    android:background="?attr/editTextBackground"
+                    android:layout_weight="2"
+                    android:hint="01-01-1990"
+                    android:textColorHint="#B6ADAD"
+                    android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                    />
+
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="Email:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etMailFEB"
+                    android:enabled="false"
+                    android:layout_weight="2"
+                    android:hint="Email: "
+                    android:textColorHint="#B6ADAD"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            style="?android:attr/buttonBarButtonStyle">
+
+            <Button
+                android:id="@+id/btUpdateBuyerFEB"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật"
+                android:layout_marginRight="60dp"
+                style="@style/loginButton" />
+
+            <Button
+                android:id="@+id/btCancelFEB"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Hủy"
+                style="@style/loginButton"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
